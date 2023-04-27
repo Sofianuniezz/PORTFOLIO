@@ -1,0 +1,60 @@
+.experiencia{
+    height: 78vh;
+    padding-top: 50px;
+
+    .header-experiencia{
+        text-align: center;
+    }
+
+    .lista-experiencia{
+        padding-top: 80px;
+        padding-bottom: 15px;
+        padding-right: 100px;
+        padding-left: 100px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: space-around;
+        row-gap: 40px;
+
+
+        .empresa{
+            width: 45%;
+        }
+
+        .empresa-titulo{
+            margin: 0px;
+            @include tipografias ($sans-serif,1.1rem,600);
+        }
+
+        .empresa-fecha{
+            margin-bottom: 50px;
+            @include tipografias ($sans-serif,0.9rem,600);
+        }
+
+        .descripcion{
+            padding-bottom: 20px;
+            @include tipografias ($sans-serif,0.9rem,300);  
+        }
+    }
+
+    @media (max-width: 375px ) {
+        .lista-experiencia{
+            padding-right: 50px;
+            padding-left: 50px;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+            
+            .empresa{
+                width: 100%;
+            }
+        }
+        
+    }
+}
+

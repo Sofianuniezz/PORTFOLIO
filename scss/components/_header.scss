@@ -1,0 +1,14 @@
+.container-fluid{
+    padding: 0;
+    margin: 30px ;
+
+    .navbar-nav {
+        li {
+            a {
+            &:hover {
+                color: #b8b8b8;
+            }
+        }
+        }
+    }
+}

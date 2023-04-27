@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+$serif: "Playfair Display", serif;
+$sans-serif: "Raleway", sans-serif;
+$borde: 1px solid black;
+
+
+@mixin tipografias ($tipo,$size,$weight){
+    font-family: $tipo;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+h2{
+    @include tipografias ($serif,2.5rem,700);
+}
+
+h3{
+    @include tipografias ($sans-serif,1.1rem,600);
+}

@@ -1,0 +1,22 @@
+/* TARJETAS PROYECTOS*/
+
+.tarjeta-proyecto{
+    width: 30%;
+    height: 25%;
+
+    .tarjeta-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .tarjeta-titulo{
+        padding-top: 20px;
+        margin: 0px;
+        @include tipografias ($sans-serif,1rem,600);
+    }
+
+    .tarjeta-tipologia-proyecto{
+        @include tipografias ($sans-serif,0.9rem,300);
+    }
+}
+

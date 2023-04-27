@@ -1,0 +1,58 @@
+.grilla-sobre-mi{
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-left: 100px;
+
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    grid-template-rows: 100px 150px 200px 100px;
+    column-gap: 50px;
+
+    .header-sobre-mi{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .texto-sobre-mi{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    
+        @include tipografias ($sans-serif,0.9rem,300);
+    }
+
+    .texto-sobre-mi-bis{
+        @extend .texto-sobre-mi;
+        
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .img-yo{
+        width: 70%;
+        height: 100%;
+        grid-column: 3/4;
+        grid-row: 1/5;
+        justify-self: center;
+    }
+
+    @media (max-width: 375px ) {
+        .grilla-sobre-mi{
+            margin: 50px;
+    
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

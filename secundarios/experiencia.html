@@ -4,47 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/estilos.css">
-    <title>Experiencia</title>
+
+    <title>Experiencia | Sofía Nuñez Castro</title>
 </head>
 <body>
-    <header class="header">
-        <figure>
-            <a href="../index.html">
-                <img src="../img/icono-navbar.png" alt="icono-navbar">
-            </a>
-        </figure>
 
-        <nav>
-            <ul class="nav-list">
-                <li> <a href="sobre-mi.html">Sobre mí</a></li>
-                <li>Experiencia</li>
-                <li> <a href="proyectos.html">Proyectos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"> <img src="../img/icono-navbar.png" alt="logo-portfolio"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sobre-mi.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="experiencia.html">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="experiencia">
-            <h2>Mi Experiencia</h2>
+            <h2 class="header-experiencia">Mi Experiencia</h2>
 
-            <ul class="exp-list">
-                <li>Perramus</li>
-                <hr>
-                <li>Expertise consultores</li>
-                <hr>
-                <li>Geopagos</li>
-                <hr>
-                <li>Vivencias</li>
-                <hr>
-                <li>UC3M</li>
-                <hr>
-                <li>UTDT</li>
-            </ul>
+            <div class="lista-experiencia">
+                <article class="empresa">
+                    <h3 class="empresa-titulo">Perramus</h3>
+                    <span class="empresa-fecha">Abril 2023 - Presente</span>
+                    <p class="descripcion">Diseño de gráfico de redes sociales (publicaciones e historias), catálogos para showrooms y página web de la marca. Planificación e ideación de campañas y colecciones, acompañado del diseño de locales.</p>
+                    <hr>
+                </article>
+                    
+                <article class="empresa">
+                    <h3 class="empresa-titulo">Expertise consultores</h3>
+                    <span class="empresa-fecha">Junio 2020 - Abril 2023</span>
+                    <p class="descripcion">Diseño de piezas gráficas de manera freelance para capacitaciones dentro de distintas empresas. Adaptación a identidad visual y diseño de los materiales como presentaciones y handouts. </p>
+                    <hr>
+                </article>
+                    
+                <article class="empresa">
+                    <h3 class="empresa-titulo">Cinemark Hoyts</h3>
+                    <span class="empresa-fecha">Febrero 2023 - Abril 2023</span>
+                    <p class="descripcion">Ideación, diseño y concreción de un juego de mesa de tipo trivia para llevar a cabo una capacitación en equipos; con el objetivo de adquirir conocimientos dentro del área de recursos humanos.</p>
+                    <hr>
+                </article>
+                    
+                <article class="empresa">
+                    <h3 class="empresa-titulo">Geopagos</h3>
+                    <span class="empresa-fecha">2021</span>
+                    <p class="descripcion">Pasantía como diseñadora de experiencia de usuario y de interfaces. Haciendo user research y prototipado para billeteras virtuales, plataformas e-commerce y otros productos dentro del mundo fintech.</p>
+                    <hr>
+                </article>
+                    
+            </div>
+
+            
         </section>
     </main>
 
-        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> 
+
 </body>
+
 </html>
