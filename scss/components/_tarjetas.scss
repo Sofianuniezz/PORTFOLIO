@@ -3,20 +3,28 @@
 .tarjeta-proyecto{
     width: 30%;
     height: 25%;
+    box-shadow: 0px 2px 4px rgb(237, 237, 237);
 
     .tarjeta-img{
         width: 100%;
         height: 100%;
     }
-    
-    .tarjeta-titulo{
-        padding-top: 20px;
-        margin: 0px;
-        @include tipografias ($sans-serif,1rem,600);
-    }
 
-    .tarjeta-tipologia-proyecto{
-        @include tipografias ($sans-serif,0.9rem,300);
+    .tarjeta-label{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+
+        .tarjeta-titulo{
+            padding-top: 20px;
+            margin: 0px;
+            @include tipografias ($sans-serif,1rem,600);
+        }
+    
+        .tarjeta-tipologia-proyecto{
+            margin-bottom: 20px;
+            @include tipografias ($sans-serif,0.9rem,300);
+        }
     }
 }
 

@@ -34,8 +34,10 @@ h3 {
 
 .footer {
   margin-top: 30px;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding-left: 50px;
+  border: 1px solid black;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -49,19 +51,26 @@ h3 {
 .tarjeta-proyecto {
   width: 30%;
   height: 25%;
+  box-shadow: 0px 2px 4px rgb(237, 237, 237);
 }
 .tarjeta-proyecto .tarjeta-img {
   width: 100%;
   height: 100%;
 }
-.tarjeta-proyecto .tarjeta-titulo {
+.tarjeta-proyecto .tarjeta-label {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.tarjeta-proyecto .tarjeta-label .tarjeta-titulo {
   padding-top: 20px;
   margin: 0px;
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 600;
 }
-.tarjeta-proyecto .tarjeta-tipologia-proyecto {
+.tarjeta-proyecto .tarjeta-label .tarjeta-tipologia-proyecto {
+  margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-size: 0.9rem;
   font-weight: 300;
@@ -82,6 +91,11 @@ h3 {
   font-family: "Playfair Display", serif;
   font-size: 5rem;
   font-weight: 700;
+}
+.home .home-servicios {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 100px;
 }
 
 @media (max-width: 375px) {
@@ -116,7 +130,7 @@ h3 {
   grid-row: 3/4;
 }
 .grilla-sobre-mi .img-yo {
-  width: 70%;
+  width: 100%;
   height: 100%;
   grid-column: 3/4;
   grid-row: 1/5;
@@ -178,7 +192,7 @@ h3 {
     padding-right: 50px;
     padding-left: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
   }
   .experiencia .lista-experiencia .empresa {
