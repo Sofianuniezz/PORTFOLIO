@@ -6,7 +6,7 @@
 
     .footer-links{
         padding: 0px;
-        
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -16,6 +16,14 @@
             width: 20px;
             height: 20px;
         }
+    }
+}
+
+@media (max-width: 375px) {
+    .footer{
+        margin: 20px;
+        padding-top: 50px;
+        padding-bottom: 20px;
     }
 }
 
