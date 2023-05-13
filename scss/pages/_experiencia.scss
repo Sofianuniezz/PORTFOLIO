@@ -1,5 +1,5 @@
 .experiencia{
-    height: 78vh;
+    height: 75vh;
     padding-top: 50px;
 
     .header-experiencia{
@@ -12,16 +12,32 @@
         padding-right: 100px;
         padding-left: 100px;
 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-content: space-around;
-        row-gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-template-rows: repeat(2, 50%);
+        row-gap: 20px;
+        column-gap: 50px;
+    
 
 
-        .empresa{
-            width: 45%;
+        .perramus{
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .expertise{
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .cinemark{
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        .geopagos{
+            grid-column: 2/3;
+            grid-row: 2/3;
         }
 
         .empresa-titulo{
@@ -41,20 +57,44 @@
     }
 
     @media (max-width: 375px ) {
-        .lista-experiencia{
-            padding-right: 50px;
-            padding-left: 50px;
-
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            
-            
-            .empresa{
-                width: 100%;
-            }
+        .experiencia{
+            padding-top: 0px;
         }
         
+        .header-experiencia{
+            @include tipografias ($serif,2rem,700);
+        }
+
+        .lista-experiencia{
+            margin: 20px;
+            padding: 0px;
+            padding-top: 40px;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 20%);
+            column-gap: 0px;  
+            row-gap: 40px;
+            
+            .perramus{
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+    
+            .expertise{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+    
+            .cinemark{
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+    
+            .geopagos{
+                grid-column: 1/2;
+                grid-row: 4/5;
+            }
+        }
     }
 }
-

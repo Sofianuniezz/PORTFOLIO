@@ -24,6 +24,12 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
 .container-fluid {
   padding: 0;
   margin: 30px;
@@ -33,17 +39,21 @@ h3 {
 }
 
 .footer {
-  margin-top: 30px;
+  margin: 50px;
   margin-right: 100px;
   margin-left: 100px;
-  padding-left: 50px;
+  color: #8b8b8b;
+}
+.footer .footer-links {
+  padding: 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  column-gap: 20px;
 }
-.footer a:hover {
-  color: #b8b8b8;
+.footer .footer-links .icono-footer {
+  width: 20px;
+  height: 20px;
 }
 
 /* TARJETAS PROYECTOS*/
@@ -77,9 +87,9 @@ h3 {
 
 /* ----HOME---- */
 .home {
-  height: 70vh;
-  margin-left: 50px;
-  margin-right: 50px;
+  height: 75vh;
+  margin-left: 100px;
+  margin-right: 100px;
   padding: 30px;
   border: 1px solid black;
   display: flex;
@@ -170,7 +180,7 @@ h3 {
   }
 }
 .experiencia {
-  height: 78vh;
+  height: 75vh;
   padding-top: 50px;
 }
 .experiencia .header-experiencia {
@@ -181,15 +191,27 @@ h3 {
   padding-bottom: 15px;
   padding-right: 100px;
   padding-left: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: space-around;
-  row-gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 45%);
+  grid-template-rows: repeat(2, 50%);
+  row-gap: 20px;
+  column-gap: 50px;
 }
-.experiencia .lista-experiencia .empresa {
-  width: 45%;
+.experiencia .lista-experiencia .perramus {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.experiencia .lista-experiencia .expertise {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.experiencia .lista-experiencia .cinemark {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.experiencia .lista-experiencia .geopagos {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 .experiencia .lista-experiencia .empresa-titulo {
   margin: 0px;
@@ -210,15 +232,39 @@ h3 {
   font-weight: 300;
 }
 @media (max-width: 375px) {
-  .experiencia .lista-experiencia {
-    padding-right: 50px;
-    padding-left: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  .experiencia .experiencia {
+    padding-top: 0px;
   }
-  .experiencia .lista-experiencia .empresa {
-    width: 100%;
+  .experiencia .header-experiencia {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .experiencia .lista-experiencia {
+    margin: 20px;
+    padding: 0px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 20%);
+    column-gap: 0px;
+    row-gap: 40px;
+  }
+  .experiencia .lista-experiencia .perramus {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .experiencia .lista-experiencia .expertise {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .experiencia .lista-experiencia .cinemark {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .experiencia .lista-experiencia .geopagos {
+    grid-column: 1/2;
+    grid-row: 4/5;
   }
 }
 
@@ -254,14 +300,44 @@ h3 {
   }
 }
 .contacto {
-  margin-left: 100px;
-  margin-top: 20vh;
+  margin: 100px;
+  margin-top: 15vh;
 }
-
-.iconos {
-  padding: 0px;
-  margin-left: 100px;
-  margin-top: 50px;
+.contacto .form-contacto {
+  width: 40vw;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.contacto .form-contacto .form-label {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.contacto .form-contacto .footer-boton {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 15%;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+@media (max-width: 375px) {
+  .contacto .contacto {
+    margin: 20px;
+    padding: 0px;
+  }
+  .contacto .contacto .header-contacto {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .contacto .contacto .form-contacto {
+    width: 60vw;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -1,11 +1,42 @@
 .contacto{
-    margin-left: 100px;
-    margin-top: 20vh;
-}
+    margin: 100px;
+    margin-top: 15vh;
 
-.iconos{
-    padding: 0px;
-    margin-left: 100px;
-    margin-top: 50px;
-    
+    .form-contacto{
+        width: 40vw;
+        padding-top: 50px;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        row-gap: 10px;
+
+        .form-label{
+            @include tipografias ($sans-serif,0.9rem,600);
+        }
+
+        .footer-boton{
+            padding: 5px;
+            border: $borde;
+            border-radius: 10px;
+            width: 15%;
+
+            @include tipografias ($sans-serif,0.9rem,600);
+        }
+    }
+
+    @media (max-width: 375px){
+        .contacto{
+            margin: 20px;
+            padding: 0px;
+
+            .header-contacto{
+                @include tipografias ($serif,2rem,700);
+            }
+
+            .form-contacto{
+                width: 60vw;
+            }
+        }
+    }
 }

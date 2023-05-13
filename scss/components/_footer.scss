@@ -1,18 +1,21 @@
 .footer{
-    margin-top: 30px;
+    margin: 50px;
     margin-right: 100px;
     margin-left: 100px;
-    padding-left: 50px;
+    color: #8b8b8b;
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-
-    a {
-        &:hover {
-            color: #b8b8b8;
+    .footer-links{
+        padding: 0px;
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    
+        .icono-footer{
+            width: 20px;
+            height: 20px;
         }
     }
 }
+
