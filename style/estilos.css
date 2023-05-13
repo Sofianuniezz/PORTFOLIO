@@ -316,27 +316,30 @@ h4 {
   font-size: 0.9rem;
   font-weight: 600;
 }
-.contacto .form-contacto .footer-boton {
+.contacto .form-contacto .form-boton {
   padding: 5px;
   border: 1px solid black;
   border-radius: 10px;
-  width: 15%;
+  width: 40%;
   font-family: "Raleway", sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
 }
+
 @media (max-width: 375px) {
-  .contacto .contacto {
+  .contacto {
     margin: 20px;
-    padding: 0px;
+    padding: 0;
   }
-  .contacto .contacto .header-contacto {
+  .header-contacto {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     font-weight: 700;
   }
-  .contacto .contacto .form-contacto {
-    width: 60vw;
+  .form-label {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
   }
 }
 

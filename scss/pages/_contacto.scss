@@ -15,28 +15,30 @@
             @include tipografias ($sans-serif,0.9rem,600);
         }
 
-        .footer-boton{
+        .form-boton{
             padding: 5px;
             border: $borde;
             border-radius: 10px;
-            width: 15%;
+            width: 40%;
 
             @include tipografias ($sans-serif,0.9rem,600);
         }
     }
+}
 
-    @media (max-width: 375px){
-        .contacto{
-            margin: 20px;
-            padding: 0px;
 
-            .header-contacto{
-                @include tipografias ($serif,2rem,700);
-            }
-
-            .form-contacto{
-                width: 60vw;
-            }
-        }
+@media (max-width: 375px){
+    .contacto{
+        margin: 20px;
+        padding: 0;
     }
+
+    .header-contacto{
+        @include tipografias ($serif,2rem,700);
+    }
+
+    .form-label{
+        @include tipografias ($sans-serif,1rem,600);
+    }
+    
 }
